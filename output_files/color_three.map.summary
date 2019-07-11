@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sat Dec 09 18:19:24 2017
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+Revision Name : color_three
+Top-level Entity Name : color_three
+Family : MAX 10
+Total logic elements : 3,725
+    Total combinational functions : 3,672
+    Dedicated logic registers : 196
+Total registers : 196
+Total pins : 57
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

@@ -1,0 +1,57 @@
+module color_three(s0, s1, s2, s3, led, btn, frequency, clk);
+
+output reg s0, s1, s2, s3, led, btn;
+input frequency, clk;
+reg [6:0] count_clk, clk1, start_time, end_time,total_time;
+reg flag;
+
+initial 
+begin
+s0<=1;
+s1<=0;
+led<=1;
+s2<=0;
+s3<=0;
+btn<=0;
+count_clk=0;
+flag=0;
+start_time=0;
+end_time=0
+clk1=0;
+end
+
+always @(posedge clk)
+if (count_clk == 50)
+begin
+clk1=~clk1;
+count_clk=0;
+end
+else
+count_clk= count_clk+1;
+
+
+always @(negedge frequency)
+begin
+if(flag==0)
+begin
+start_time<=clk1;
+flag<=1;
+end
+else
+begin
+end_time<=clk1;
+flag<=0;
+end
+end
+
+assign total_time = (end_time-start_time)/2;
+
+always @(posedge end_time)
+begin
+if(total_time>20)
+btn=1;
+else
+btn=0;
+end
+
+endmodule 

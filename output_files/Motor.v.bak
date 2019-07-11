@@ -1,0 +1,66 @@
+module Motor(e1,e2,as1,as2,bs1,bs2, state,state2,clock);
+input clock,state,state2;
+output reg e1,e2,as1,as2,bs1,bs2;
+reg [25:0]count;
+reg flag,flag2;
+initial 
+begin
+flag2<=0;
+count<=0;
+flag<=0;
+e1<=0;
+e2<=0;
+as2<=0;
+as1<=0;
+bs1<=0;
+bs2<=0;
+end
+//turn left
+always@(posedge clock)
+begin
+if(state==0)
+begin
+flag<=1;
+end
+if(flag==1 & count<27000000)
+begin
+ e1<=1;
+ e2<=1;
+ as2<=1;
+ as1<=1;
+ bs2<=1;
+ bs1<=0;
+count<=count+1;
+end
+if(count==27000000)
+begin
+flag2<=0;
+flag<=0;
+count<=0;
+ e1<=0;
+ e2<=0;
+ as2<=0;
+ as1<=0;
+ bs2<=0;
+ bs1<=0;
+ end
+
+
+//turn right
+
+if(state2==0)
+begin
+flag2<=1;
+end
+if(flag2==1 & count<27000000)
+begin
+ e1<=1;
+ e2<=1;
+ as2<=1;
+ as1<=0;
+ bs2<=1;
+ bs1<=1;
+count<=count+1;
+end
+ end
+endmodule

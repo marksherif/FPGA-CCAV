@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -3.669
+TNS   : -405.932
+
+Type  : Slow 1200mV 85C Model Setup 'frequency'
+Slack : -2.623
+TNS   : -55.475
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'frequency'
+Slack : 0.676
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'frequency'
+Slack : -1.028
+TNS   : -28.814
+
+Type  : Slow 1200mV 85C Model Removal 'frequency'
+Slack : 1.146
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -231.689
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'frequency'
+Slack : -3.000
+TNS   : -49.299
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -3.285
+TNS   : -360.001
+
+Type  : Slow 1200mV 0C Model Setup 'frequency'
+Slack : -2.258
+TNS   : -46.942
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : 0.304
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'frequency'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'frequency'
+Slack : -0.768
+TNS   : -20.634
+
+Type  : Slow 1200mV 0C Model Removal 'frequency'
+Slack : 0.933
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -231.689
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'frequency'
+Slack : -3.000
+TNS   : -49.299
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -0.974
+TNS   : -80.822
+
+Type  : Fast 1200mV 0C Model Setup 'frequency'
+Slack : -0.419
+TNS   : -4.550
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.036
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'frequency'
+Slack : 0.264
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'frequency'
+Slack : -0.222
+TNS   : -4.730
+
+Type  : Fast 1200mV 0C Model Removal 'frequency'
+Slack : 0.724
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -171.488
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'frequency'
+Slack : -3.000
+TNS   : -41.143
+
+------------------------------------------------------------
